@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 0 2%;
+}
+
+header,
+section.statements,
+section.about {
+	padding: 25px 0
+}
+
+header .logo {
+	float: left;
+}
+
+header .logo img,
+.cta-banner .text-banner .download-img img,
+.marketing .download-img img,
+footer img {
+	max-width: 100%;
+	cursor: pointer;
+}
+
+header .menu-desktop {
+	float: right;
+}
+
+header .menu-desktop ul {
+	list-style-type: none;
+}
+
+header .menu-desktop ul li {
+	display: inline-block;
+	margin: 0 0 0 30px;
+}
+
+header .menu-desktop ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+header .menu-desktop ul li a.cta-button {
+	padding: 10px 30px;
+	color: white;
+	background-color: green;
+	text-transform: uppercase;
+	transition: 250ms ease-in;
+}
+
+header .menu-desktop ul li a.cta-button:hover {
+	background-color: darkgreen;
+	box-shadow: 5px 5px 40px 5px lightgreen;
+}
+
+section.cta-banner .text-banner {
+	width: 55%;
+	float: left;
+	padding-right: 50px;
+}
+
+.cta-banner .text-banner h2 {
+	font-size: 36px;
+	font-weight: bold;
+	color: green;
+}
+
+.cta-banner .text-banner p {
+	font-size: 18px;
+	margin: 12px 0 24px 0;
+}
+
+section.cta-banner .img-banner {
+	width: 45%;
+	float: left;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../assets/banner.png);
+	min-height: 400px;
+}
+
+section.statements > .container {
+	display: flex;
+	width: 100%;
+	max-width: 1310px;
+}
+
+section.statements .box {
+	width: 50%;
+	background-color: #f2f2f2;
+	padding: 20px 25px;
+	margin: 0 15px;
+	position: relative;
+}
+
+.statements .box p {
+	font-size: 18px;
+	margin-bottom: 40px;
+	font-style: italic;
+}
+
+.statements .box span {
+	color: green;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 15px;
+	left: 25px;
+}
+
+section.about h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.about .line {
+	background-color: green;
+}
+
+.about .line,
+section.marketing .line {
+	height: 3px;
+	width: 100px;
+	margin: 12px 0 24px 0;
+}
+
+.about .flexbox {
+	width: 100%;
+	display: flex;
+}
+
+.about .flexbox .board {
+	width: 33%;
+	margin: 0 10px;
+	border: 1px solid #ccc;
+}
+
+.about .flexbox .board .top {
+	display: flex;
+	align-items: center;
+	background-color: #f2f2f2;
+}
+
+.about .flexbox .board .top .square {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	background-color: green;
+}
+
+.about .flexbox .board .top .square i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 50px;
+	color: white
+}
+
+.about .flexbox .board .top h3 {
+	padding: 0 2%;
+}
+
+.about .flexbox .board p {
+	padding: 40px 20px;
+}
+
+section.images {
+	margin-bottom: 30px;
+}
+
+section.images .one,
+section.images .two,
+section.images .three {
+	border: 8px solid white;
+}
+
+section.images .one {
+	float: left;
+	width: 50%;
+	min-height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../assets/1.jpg);
+}
+
+section.images .two {
+	float: left;
+	width: 50%;
+	min-height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../assets/2.jpg);
+}
+
+section.images .three {
+	float: left;
+	width: 50%;
+	min-height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../assets/3.jpg);
+}
+
+section.marketing {
+	background-color: green;
+	padding: 40px 0;
+}
+
+section.marketing h2 {
+	color: white;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+section.marketing .line {
+	background-color: white;
+}
+
+section.marketing p {
+	color: white;
+	font-size: 17px;
+	margin-bottom: 50px;
+}
+
+footer > .container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 2%;
+}
+
+footer p {
+	color: green;
+}
+
+footer p i {
+	color: red;
+}
+
+footer .icons i {
+	font-size: 22px;
+	color: green;
+	margin: 0 10px;
+	position: relative;
+	left: 20px;
+	cursor: pointer;
+}
