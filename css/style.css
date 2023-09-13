@@ -262,3 +262,102 @@ footer .icons i {
 	left: 20px;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 960px) {
+	.about .flexbox {
+		flex-wrap: wrap;
+	}
+	
+	.about .flexbox .board {
+		width: 100%;
+		margin: 10px auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header .logo {
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	header .menu-desktop {
+		float: none;
+		display: none;
+	}
+
+	section.cta-banner .text-banner {
+		width: 100%;
+		float: none;
+		padding-right: 0;
+		text-align: center;
+	}
+	
+	section.cta-banner .img-banner {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+
+	section.statements > .container {
+		max-width: 1280px;
+		flex-wrap: wrap;
+	}
+	
+	section.statements .box {
+		width: 100%;
+		padding: 20px 25px;
+		margin: 15px 0;
+	}
+
+	section.images {
+		margin-bottom: 30px;
+	}
+	
+	section.images .one,
+	section.images .two,
+	section.images .three {
+		border: 0;
+		float: none;
+		width: 100%;
+		min-height: 300px;
+		margin: 15px 0;
+	}
+
+	section.marketing .download-img img {
+		margin: 10px auto;
+		text-align: center;
+		display: block;
+	}
+
+	footer .container img {
+		display: none;
+	}
+
+	footer p,
+	footer .icons {
+		margin: 20px 0;
+	}
+	
+	footer > .container {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	
+	footer .icons i {
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	section.cta-banner .img-banner {
+		width: 100%;
+		height: 200px;
+		background-position: left;
+	}
+
+	.about .flexbox .board .top h3 {
+		font-size: 16px;
+	}
+}
